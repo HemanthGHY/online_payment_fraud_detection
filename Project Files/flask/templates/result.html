@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Result</title>
+    <link rel="stylesheet" href = "../static/style.css">
+</head>
+<body class="result-body">
+    <div class="result-card">
+        <h2 class="result-title">Transaction Analysis Result</h2>
+
+        {% if prediction == "Fraud" %}
+        <h3 class="fraud-text">⚠ Fraudulent Transaction</h3>
+            <p>This transaction appears suspicious. Please review it carefully.</p>
+        {% else %}
+            <h3 class="safe-text">✔ Safe Transaction</h3>
+            <p>This transaction appears safe and has been approved.</p>
+        {% endif %}
+
+        <a href="/predict">
+            <button class="primary-btn">Check Another Transaction</button>
+        </a>
+    </div>
+
+</body>
+</html>

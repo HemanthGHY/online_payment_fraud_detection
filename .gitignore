@@ -1,0 +1,84 @@
+
+# ================================
+# Python Cache & Compiled Files
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.log
+
+# ================================
+# Virtual Environments
+# ================================
+myenv/
+venv/
+env/
+.venv/
+
+# ================================
+# Jupyter Notebook Files
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# IDE / Editor Settings
+# ================================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# ================================
+# Operating System Files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# Environment Variable Files
+# ================================
+.env
+.env.local
+
+# ================================
+# Machine Learning Models
+# ================================
+*.pkl
+*.joblib
+
+# ================================
+# Training Outputs
+# ================================
+training/output/
+training/results/
+training/logs/
+
+# ================================
+# Dataset Files (Optional)
+# ================================
+data/*.csv
+
+# ================================
+# Flask Temporary Files
+# ================================
+instance/
+*.sqlite3
+
+# ================================
+# Build & Distribution Files
+# ================================
+build/
+dist/
+*.egg-info/
+
+# Large files
+*.mp4
+*.csv
+
+# ML junk
+.ipynb_checkpoints/
+__pycache__/

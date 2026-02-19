@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Prediction</title>
+    <link rel="stylesheet" href = "../static/style.css">
+</head>
+<body class="form-body">
+
+    <div class="form-card">
+        <h2 class="form-title">Online Payments Fraud Detection</h2>
+
+        <form action="/pred" method="POST">
+
+            <label>Step</label>
+            <input type="number" name="step" placeholder="Step: represents a unit of time" required>
+
+            <label>Type</label>
+            <select name="type" required>
+            <option value="CASH_IN">CASH_IN</option>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="DEBIT">DEBIT</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="TRANSFER">TRANSFER</option>
+            </select>
+
+            <label>Amount</label>
+            <input type="number" step="any" name="amount" placeholder="The amount of the transaction" required>
+
+            <label>OldbalanceOrg</label>
+            <input type="number" step="any" name="oldbalanceOrg" placeholder="Balance before transaction" required>
+
+            <label>NewbalanceOrig</label>
+            <input type="number" step="any" name="newbalanceOrig" placeholder="Balance after transaction" required>
+
+            <label>OldbalanceDest</label>
+            <input type="number" step="any" name="oldbalanceDest" placeholder="Initial balance of recipient" required>
+
+            <label>NewbalanceDest</label>
+            <input type="number" step="any" name="newbalanceDest" placeholder="New balance of recipient" required>
+
+            <button type="submit" class="submit-btn">Check Fraud</button>
+        </form>
+    </div>
+
+</body>
+</html>
